@@ -7,8 +7,13 @@
 程序源代码：
 """
 
-for bai in range(1,5):#python都是左开右闭，所以是（1,5）
-    for shi in range(1,5):
-    	for ge in range(1,5):
-    		if (bai != shi) and (shi != ge) and (bai != ge):
-    			print bai,shi,ge
+num = 0
+for hundreds in range(1, 5):
+    for tens in range(1, 5):
+            for ones in range(1, 5):
+                #取三个不同的数字
+                if (hundreds != tens) and (tens != ones) and (hundreds != ones): 
+                    print(hundreds * 100 + tens * 10 + ones)
+                    num += 1
+                    
+print(num)
